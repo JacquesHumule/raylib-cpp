@@ -3,6 +3,13 @@
 
 #include "./raylib.hpp"
 
+/**
+ * Allow changing the declare type for all raylib-cpp global functions. Defaults to static.
+ */
+#ifndef RLCPPAPI
+#define RLCPPAPI static
+#endif
+
 namespace raylib {
 /**
  * Input-related functions: keyboard
